@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+.person_card {
+    position: relative;
+    margin: 20px;
+    min-width: 190px;
+    max-width: 230px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgb(190, 190, 190);
+    place-items: center;
+}
+
+.tile_conatainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    place-items: center;
+}
+
+.tile_conatainer .portrait_frame {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+
+.portrait_frame h3{
+    font-size: 20px;
+}
+
+.portrait_frame p{
+    font-size: 20px;
+}
+
+.tile_conatainer .portrait_frame .portrait_img {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 130%;
+    object-fit: cover;
+}
+
+.social_icons_container {
+    margin-top: 10%;
+    display: flex;
+}
+
+.social_icons_container li {
+    list-style: none;
+    margin: 0 7px;
+}
+
+.social_icons_container img {
+    width: 32px;
+    height: 32px;
+    filter: grayscale(1) opacity(.8);
+}
+
+.social_icons_container img:hover {
+    filter: none;
+}
